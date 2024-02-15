@@ -1,0 +1,14 @@
+<h1>Blog</h1>
+
+Aqui ficarão as entradas do blog do {{user}}
+
+{% if user == "Luis" %}
+
+    <br>
+     O criador, <strong>{{user}}</strong>
+
+{% endif %}
+
+{% for post in posts %}
+    {{post}} <br>
+{% endfor %}
