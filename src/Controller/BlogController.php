@@ -22,6 +22,7 @@ class BlogController extends AbstractController {
             'post 5',
             'post 6',
         ];
+        dump($this);
         $user = ucwords(str_replace("-"," ", $user));
         return $this->render('blog/lista.twig', [
             'user'=> $user,
